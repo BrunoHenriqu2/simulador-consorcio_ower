@@ -1,6 +1,3 @@
-import dotenv from "dotenv"
-import nodemailer from "nodemailer"
-
 const data = {
 
     "types": {
