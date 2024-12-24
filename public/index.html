@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Consórcio</title>
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="resultStyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="inside">
+            <img src="../img/isocred.png" alt="Logo da Isocred">
+            <div class="linha"></div>
+            <img src="../img/hs-consorcios.png" alt="Logo da Hs Consórcios">
+        </div>
+    </header>
+    <main>
+        <h1>FAÇA SUA SIMULAÇÃO AQUI!</h1>
+
+        <section class="inputs">
+            <div name="tipo-consorcio">
+                <label for="selecionar-tipo-consorcio"><strong>Tipo de Consórcio<span> *</span></strong></label>
+                <select class="selection-input" id="tipo-consorcio" name="selecionar-tipo-consorcio"
+                    title="Selecionar tipo de consórcio">
+                    <option value="imovel">Imóvel</option>
+                    <option value="veiculo">Veículo</option>
+                </select>
+            </div>
+
+            <div name="tipo-consulta">
+                <label for="selecionar-tipo-consulta"><strong>Tipo de Consulta<span> *</span></strong></label>
+                <select class="selection-input" id="tipo-consulta" name="selecionar-tipo-consulta"
+                    title="Selecionar tipo de consulta">
+                    <option value="credito">Crédito</option>
+                    <!-- <option value="parcela">Parcela</option> -->
+                </select>
+            </div>
+
+            <div name="prazo">
+                <label for="prazo"><strong>Prazo<span> *</span></strong></label>
+                <select class="selection-input" id="prazo" name="Selecionar prazo"
+                title="Selecionar prazo">
+                <option value="180">180</option>
+                <option value="200">200</option>
+                <option value="220">220</option>
+            </select>
+            </div>
+
+            <div name="valor-desejado">
+                <label for="valor"><strong>Valor<span> *</span></strong></label>
+                <input class="default-input" type="text" inputmode="numeric" name="Valor" id="valor" placeholder="0,00">
+            </div>
+
+            <div name="simular">
+                <label for="">.</label>
+                <button type="submit" id="simulate" class="default-input"><strong>Simular</strong></button>
+            </div>
+
+        </section>
+        <div id="error"></div>
+    </main>
+    <footer>
+        <div class="social-media">
+            <!-- <input type="image" src="img/face-icon-c.png" alt="" title="facebook" id="face"> -->
+            <input type="image" src="../img/zap-icon-c.png" alt="ícone whatsapp" title="whatsapp" id="zap">
+            <input type="image" src="../img/insta-icon-c.png" alt="ícone instagram" title="instagram" id="insta">
+            <input type="image" src="../img/tiktok-icon-c.png" alt="ícone tiktok" title="tiktok" id="tiktok">
+        </div>
+        <p>Copyright &copy;2024 - Isocred</p>
+    </footer>
+    <script src="./buttons/linksFooter.js"></script>
+    <script src="./buttons/nome.js"></script>
+    <script src="./buttons/telefone.js"></script>
+    <script src="./buttons/valor.js"></script>
+    <script src="./buttons/prazo.js"></script>
+    <script src="./buttons/simular.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+linksFooter()
+nome()
+simular()
+telefone()
+prazo()
+valor()

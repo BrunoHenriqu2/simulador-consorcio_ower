@@ -1,0 +1,41 @@
+table {
+    margin-top: 2rem;
+    width: 90%;
+    background-color: rgba(255, 138, 42, .8);
+}
+
+tr {
+    background-color: #ffffff;
+    height: 2.6rem;
+}
+
+th {
+    width: 18rem;
+    height: 2.6rem;
+}
+
+#map-location {
+    width: 40rem;
+    height: 20rem;
+}
+
+a {
+    color: rgb(235, 121, 27);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1150px) {
+
+    table {
+        margin-top: 2rem;
+    }
+
+    #map-location {
+        width: 22rem;
+        height: 12em;
+    }
+}

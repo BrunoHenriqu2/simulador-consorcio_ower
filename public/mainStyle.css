@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Agu+Display&family=Dela+Gothic+One&family=Emblema+One&family=Goblin+One&family=New+Amsterdam&family=Overlock+SC&family=Rubik+Mono+One&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 2rem;
+    font-family: "SUSE", serif;
+    text-align: center;
+    align-items: center;
+    color: #3b3ba1;
+    background-color: #ebebeb;
+    padding-bottom: 6rem;
+}
+
+span {
+    color: #ff0000;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 9rem;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: .5rem;
+    border-top: none;
+    border-bottom: none;
+    box-shadow: .2rem .2rem .2rem rgba(102, 102, 102, 0.3);
+}
+
+.inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    gap: 2rem;
+}
+
+[alt="Logo da Isocred"] {
+    width: 15.2rem;
+    height: 4rem;
+}
+
+[alt="Logo da Hs Consórcios"] {
+    width: 11rem;
+    height: 4rem;
+}
+
+.linha {
+    width: 3px;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: #ff8a2a;
+    background-image: linear-gradient(orange, red)
+}
+
+h1 {
+    margin-top: 2rem;
+    font-family: "Dela Gothic One";
+    letter-spacing: .5rem;
+}
+
+.message {
+    border-radius: .5rem;
+    border-width: .2rem;
+    border-style: dashed;
+    letter-spacing: .02rem;
+    font-size: 1.2rem;
+    box-shadow: .1rem .1rem .1rem rgba(102, 102, 102, 0.3);
+}
+
+#error {
+    display: flex;
+    visibility: hidden;
+    justify-content: start;
+    font-size: 1.1rem;
+    border-radius: 0 0 .3rem .3rem;
+    align-items: center;
+    width: 100%;
+    background-color: #ffdada;
+    margin-top: 2.4rem;
+}
+
+#error img {
+    width: 2.98rem;
+    height: 2.98rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-style: solid;
+    border-radius: .5rem;
+    gap: 1.25rem;
+    border-top: none;
+    border-bottom: none;
+    border-width: 3px;
+    width: 74rem;
+    height: 34rem;
+    box-shadow: .2rem .2rem .2rem rgba(102, 102, 102, 0.3);
+}
+
+.inputs {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    gap: 1.5rem 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70rem;
+    height: 12rem;
+}
+
+.inputs div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    row-gap: .5rem;
+}
+
+[name="simular"] label {
+    visibility: hidden;
+}
+
+[name="simular"] button {
+    width: 20rem;
+    height: 2.4rem;
+    border-color: #ff8a2a;
+    color: #ff8a2a;
+}
+
+[name="simular"] button:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: rgb(255, 138, 42);
+    border-color: rgb(48, 48, 156);
+}
+
+.selection-input {
+    width: 20.5rem;
+    height: 2.375rem;
+    font-size: .95rem;
+    border-radius: .25rem;
+    background-color: #ffffff;
+    color: rgb(48, 48, 156);
+    box-shadow: .1rem .1rem .1rem rgba(37, 21, 109, 0.5);
+    border-style: double;
+}
+
+.selection-input:hover {
+    cursor: pointer;
+    border-color: rgb(59, 59, 161);
+}
+
+.default-input {
+    width: 20rem;
+    height: 2rem;
+    font-size: .95rem;
+    border-radius: .25rem;
+    background-color: #ffffff;
+    color: #3b3ba1;
+    box-shadow: .1rem .1rem .1rem rgba(37, 21, 109, 0.5);
+    border-style: double;
+}
+
+.default-input:hover {
+    border-color: #3b3ba1;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    border: .13rem solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+    border-width: 3px;
+    height: 5.2rem;
+    gap: 1rem 1rem;
+    bottom: 0;
+    position: fixed;
+    letter-spacing: .1rem;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+.social-media input {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media (max-width: 1150px) {
+
+    body {
+        padding-bottom: 10rem;
+    }
+
+    #error {
+        margin-top: 0;
+    }
+
+    .inside {
+        gap: 1.3rem;
+    }
+
+    [alt="Logo da Isocred"] {
+        width: 11rem;
+        height: 3rem;
+    }
+
+    [alt="Logo da Hs Consórcios"] {
+        width: 10rem;
+        height: 3.7rem;
+    }
+
+    h1 {
+        margin-top: 2rem;
+        font-family: "SUSE";
+        font-size: 1.3rem;
+        letter-spacing: .1rem;
+    }
+
+    .inputs {
+        flex-direction: column;
+        margin-top: 1rem;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 30rem;
+    }
+
+    label {
+        font-size: 1.1rem;
+    }
+
+    main {
+        width: 99%;
+        height: 100%;
+    }
+
+    .inputs div {
+        width: 69%;
+        margin: -.5rem;
+    }
+
+    .inputs select {
+        width: 100%;
+    }
+
+    .selection-input {
+        width: 20.5rem;
+        height: 2rem;
+    }
+
+    .default-input {
+        width: 98.5%;
+        height: 1.7rem;
+    }
+
+    [name="simular"] button {
+        width: 100%;
+        height: 2.3rem;
+    }
+
+    footer p {
+        font-size: .9rem;
+    }
+
+
+}
