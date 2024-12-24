@@ -17,8 +17,6 @@ const canDoMath = true
 
 export default async function result(req, res) {
 
-    dotenv.config()
-
     if (req.method === "POST") {
         const { value, type, term } = req.body
 
